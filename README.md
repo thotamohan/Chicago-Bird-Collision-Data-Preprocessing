@@ -22,3 +22,10 @@ Here the output is given as json file as it has
 * More structural information in the document. Can easily distinguish between the number 1 and the string "1" as numbers, strings (and Booleans) are represented differently in JSON.
 
 
+# REQUIREMENTS
+numpy==1.20.1
+pandas==1.2.2
+python-dateutil==2.8.1
+pytz==2021.1
+six==1.15.0
+
