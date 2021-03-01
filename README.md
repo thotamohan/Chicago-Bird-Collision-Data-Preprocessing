@@ -7,12 +7,18 @@ python run 'collisionDataPath' 'flightCallPath' 'lightLevelsPath' 'outputPath1' 
 
 
 ## PREPROCESSING TASKS DONE 
-* DROPPING THE NULL VALUES AS PER THE GIVEN FORMAT.
-* Dropping the null values in the data frames.
+* Dropping the null values in the three dataframes. 
 * Renaming the columns in the flight call data frame as per the given format.
-* {"Species":"Genus","Family":"Species","Collisions":"Family","Call":"Flight Call"}
-* Join the data frames based on common columns:
-* join light levels data frame and collisions data frame based on the DATE column.
-* then join combined data frame with Flight calls data frame based on genus and species.
+ {"Species":"Genus","Family":"Species","Collisions":"Family","Call":"Flight Call"}
+* the light level values in the dataframe are converted to integer values from float as given in the requirement.
+* Then dataframes are joined based on common columns:
+* Here joining is done between light levels data frame and collisions data frame based on the DATE column.
+* then join combined new data frame with Flight calls data frame based on genus and species.
+* then the combined dataframe is printed on to json output file.
+
+Here the output is given as json file as it has 
+* a smaller message size
+* it can easily represent null values.
+* More structural information in the document. Can easily distinguish between the number 1 and the string "1" as numbers, strings (and Booleans) are represented differently in JSON.
 
 
