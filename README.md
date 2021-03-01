@@ -12,7 +12,7 @@ python run 'collisionDataPath' 'flightCallPath' 'lightLevelsPath' 'outputPath1' 
 * Renaming the columns in the flight call data frame as per the given format.
 * {"Species":"Genus","Family":"Species","Collisions":"Family","Call":"Flight Call"}
 * Join the data frames based on common columns:
-** CHECKING FOR ALL THE COLUMNS TO MAKE JOINS AS WE COULD SEE DATE COLUMNS ARE COMMON IN LIGHT LEVELS DATAFRAME AND COLLISIONS DATA dataframe.
-** THE SAME FOR GENUS AND SPECIES IN FLIGHT CALLS DATAFRAME
+* join light levels data frame and collisions data frame based on the DATE column.
+* then join combined data frame with Flight calls data frame based on genus and species.
 
 
