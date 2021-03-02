@@ -3,7 +3,7 @@ Creating a summary tabular dataset that can be used to analyze the bird collisio
 
 
 ## COMMAND TO RUN THE PREPROCESSING SCRPIPT
-python run 'collisionDataPath' 'flightCallPath' 'lightLevelsPath' 'outputPath1' 'outputPath2'
+python DataPreprocessing.py InputFileFolder outputpath
 
 
 ## PREPROCESSING TASKS DONE 
